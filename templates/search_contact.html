@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Contact Book</title>
+    <style>
+        body{
+            background-color: #E5BA73;
+            color: #C58940;
+            align-content: center;
+        }
+        #content{
+            position: absolute;
+            margin-left: 40%;
+            height: 100px;
+            margin-top: 250px;
+        }
+
+        #div_img{
+            position: absolute;
+            height: 120px;
+            width: 400px;
+            margin-top: 22px;
+        }
+        h1{
+            font-size: 48px;
+        }
+
+        input{
+            margin-bottom: 8px;
+            width: 300px;
+            height: 30px;
+            margin-top: 2px;
+        }
+
+        #img{
+            height: 102px;
+            width: 286px;
+            position: absolute;
+            margin-top: 10px;
+        }
+
+        #mainbutton{
+            position: relative;
+            width: 100px;
+            height: 55px;
+            background-color: #C58940;
+            color: #FAF8F1;
+            border-color: #f3cd92;
+            font-size: 15px;
+            margin-bottom: 10px;
+            text-align: center;
+            margin-left: 30%;
+        }
+
+        #navbar{
+            position: absolute;
+            margin-left: 700px;
+            height: 60px;
+            width: 800px;
+            margin-top: 43px;
+            background-color: #f5e1b6;
+        }
+
+        #create_contact{
+            position: absolute;
+            margin-left: 490px;
+            height: 50px;
+            width: 150px;
+            font-size: 16px;
+            margin-top: 5px;
+            background-color: #f3cd92;
+            border-color: #f3cd92;
+            color: #C58940;
+
+        }
+
+        #search_contact{
+            position: absolute;
+            margin-left: 340px;
+            height: 50px;
+            width: 150px;
+            font-size: 16px;
+            margin-top: 5px;
+            background-color: #C58940;
+            border-color: #C58940;
+            color: #f5e1b6;
+
+        }
+
+        #log_out{
+            position: absolute;
+            margin-left: 190px;
+            height: 50px;
+            width: 150px;
+            font-size: 16px;
+            margin-top: 5px;
+            background-color: #f3cd92;
+            border-color: #f3cd92;
+            color: #C58940;
+        }
+
+        #delete_contact{
+            position: absolute;
+            margin-left: 640px;
+            height: 50px;
+            width: 150px;
+            font-size: 16px;
+            margin-top: 05px;
+            background-color: #f3cd92;
+            border-color: #f3cd92;
+            color: #C58940;
+        }
+
+        label{
+            font-size: 20px;
+            font-family: 'Consolas', 'Menlo', 'DejaVu Sans Mono', 'Bitstream Vera Sans Mono', monospace;
+        }
+    </style>
+</head>
+<body>
+     <div id="navbar">
+         <form  action="show_contact" method="POST">
+                <input id="delete_contact" type="submit" name="submit" value="delete contact">
+         </form>
+         <form action="create_contact" method="POST">
+             <input id="create_contact" type="submit" name="submit" value="create contact">
+         </form>
+         <form action="search_contact" method="POST">
+             <input id="search_contact" type="submit" name="submit" value="search contact">
+         </form>
+         <form action="log_out" method="POST">
+            <input id="log_out" type="submit" name="submit" value="logout">
+         </form>
+     </div>
+     <div id="div_img">
+        <img id="img" src="..static/Contact%20Book.png">
+    </div>
+     <div id="content">
+        <form action="find_contact" method="POST">
+            <label>Enter the name you want to search</label>
+            <br>
+            <input type="text" name="name"><br>
+            <input id="mainbutton" type="submit" name="submit" value="search">
+        </form>
+     </div>
+</body>
+</html>
