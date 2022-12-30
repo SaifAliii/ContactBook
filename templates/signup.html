@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Contact Book</title>
+     <style>
+        body{
+            background-color: #E5BA73;
+            color: #C58940;
+            align-content: center;
+        }
+
+        #content{
+            position: absolute;
+            margin-left: 584px;
+            border: 1px solid;
+            background-color: #FAEAB1;
+            margin-bottom: 5px;
+        }
+        h1{
+            font-size: 48px;
+            margin-left: 20px;
+        }
+
+        #email{
+            margin-top: 6px;
+            width: 300px;
+            height: 30px;
+            margin-left: 9px;
+            margin-right: 4px;
+        }
+
+        #img{
+            height: 102px;
+            width: 286px;
+            position: absolute;
+            margin-top: 10px;
+        }
+
+        #mainbutton{
+            position: relative;
+            width: 307px;
+            height: 25px;
+            background-color: #C58940;
+            color: #FAF8F1;
+            border-color: #f3cd92;
+            font-size: 15px;
+            margin-bottom: 15px;
+            text-align: center;
+            margin-left: 9px;
+        }
+
+        #navbar{
+            height: 150px;
+            width: 419px;
+            position: relative;
+            margin-left: 22px;
+        }
+
+        #password{
+            margin-left: 5px;
+            margin-bottom: 10px;
+            width: 300px;
+            height: 30px;
+            margin-left: 10px;
+            margin-top: 6px;
+        }
+
+        label{
+            font-size: 20px;
+            font-family: 'Consolas', 'Menlo', 'DejaVu Sans Mono', 'Bitstream Vera Sans Mono', monospace;
+        }
+
+        #label_email{
+            padding-right: 245px;
+            margin-left: 7px;
+        }
+
+        #label_password{
+            padding-right: 210px;
+            margin-bottom: 3px;
+            padding-bottom: 3px;
+            margin-left: 7px;
+        }
+    </style>
+</head>
+<body>
+     <div id="navbar">
+            <img id="img" src="static/Contact%20Book.png">
+         </div>
+    <div id="content">
+        <b>
+        <h1>Contact Book</h1>
+        {{ msg }}
+        <form action="signup_user" method="POST">
+            <label id="label_email">email</label><br>
+            <input id="email" type="email" name="email">
+            <br>
+            <label id="label_password">password</label><br>
+            <input id="password" type="password" name="password">
+            <br>
+            <input id="mainbutton" type="submit" name="submit" value="submit">
+        </form>
+        </b>
+    </div>
+</body>
+</html>
