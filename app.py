@@ -9,7 +9,7 @@ app.secret_key = "123saif"
 
 @app.route('/')
 def hello():
-    return "hello"
+    return "hello world"
 
 
 @app.route('/login')
